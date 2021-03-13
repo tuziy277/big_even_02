@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大事件-login页面</title>
+    <!-- 引入layui -->
+    <link rel="stylesheet" href="/code/assets/lib/layui/css/layui.css">
+
+    <!-- 引入本页面样式 -->
+    <link rel="stylesheet" href="/code/assets/css/login.css">
+</head>
+
+<body>
+    <!-- logo -->
+    <div class="header layui-main">
+        <img src="/code/assets/images/logo.png" alt="">
+
+    </div>
+
+    <!-- login框 -->
+    <!--  登录框 注册框-->
+    <div class="loginAndRegBox">
+        <!-- 头部logo -->
+        <div class="titleBox"></div>
+
+        <!-- 登录框 -->
+        <div class="loginBox">
+            <form class="layui-form" id="formLogin">
+                <div class="layui-form-item">
+                    <i class="layui-icon layui-icon-username"></i>
+                    <input type="text" name="username" required lay-verify="required" placeholder="请输入账号"
+                        autocomplete="off" class="layui-input">
+                </div>
+                <div class="layui-form-item">
+                    <i class="layui-icon layui-icon-password"></i>
+                    <input type="text" name="possword" required lay-verify="required|pwd" placeholder="请输入密码"
+                        autocomplete="off" class="layui-input">
+                </div>
+                <div class="layui-form-item ">
+                    <button class="layui-btn layui-btn-normal layui-btn-fluid" lay-submit
+                        lay-filter="formDemo">立即提交</button>
+                </div>
+                <div class="layui-form-item">
+                    <a href="javascript:;" id="go-reg">去注册账号</a>
+                </div>
+            </form>
+        </div>
+
+        <!-- 注册框 -->
+        <div class="regBox" style="display: none;">
+            <form class="layui-form" id="formReg">
+                <div class="layui-form-item">
+                    <i class="layui-icon layui-icon-username"></i>
+                    <input type="text" name="username" required lay-verify="required" placeholder="请输入账号"
+                        autocomplete="off" class="layui-input">
+                </div>
+                <div class="layui-form-item">
+                    <i class="layui-icon layui-icon-password"></i>
+                    <input type="text" name="possword" required lay-verify="required|pwd" placeholder="请输入密码"
+                        autocomplete="off" class="layui-input">
+                </div>
+                <div class="layui-form-item">
+                    <i class="layui-icon layui-icon-password"></i>
+                    <input type="text" name="repossword" required lay-verify="required|pwd|repwd" placeholder="再次确认密码"
+                        autocomplete="off" class="layui-input">
+                </div>
+                <div class="layui-form-item ">
+                    <button class="layui-btn layui-btn-normal layui-btn-fluid" lay-submit
+                        lay-filter="formDemo">立即提交</button>
+                </div>
+                <div class="layui-form-item">
+                    <a href="javascript:;" id="go-login">去登录</a>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="/code/assets/lib/layui/layui.all.js"></script>
+    <script src="/code/assets/lib/jquery.js"></script>
+    <script src="/code/assets/js/login.js"></script>
+</body>
+
+</html>

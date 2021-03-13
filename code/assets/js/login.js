@@ -40,7 +40,7 @@ $(function () {
 
         $.ajax({
             type: 'POST',
-            url: 'http://api-breakingnews-web.itheima.net/api/reguser',
+            url: '/api/reguser',
             data: {
                 username: $('.regBox [name = username]').val(),
                 password: $('.regBox [name = possword]').val()
@@ -74,7 +74,7 @@ $(function () {
 
         $.ajax({
             type: 'POST',
-            url: 'http://api-breakingnews-web.itheima.net/api/login',
+            url: '/api/login',
             data: {
                 username: $('.loginBox [name = username]').val(),
                 password: $('.loginBox [name = possword]').val()

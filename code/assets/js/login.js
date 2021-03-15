@@ -82,6 +82,7 @@ $(function () {
             },
             success: function (res) {
                 console.log(res);
+
                 if (res.status == 0) {
 
                     // 提示成功
@@ -91,7 +92,7 @@ $(function () {
                     localStorage.setItem('token', res.token)
 
                     // 跳转页面
-                    location.href = '/index.html';
+                    location.href = '/code/index.html';
                 } else {
 
 
